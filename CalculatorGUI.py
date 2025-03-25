@@ -68,6 +68,12 @@ btn_closePara.grid(row=1, column=1)
 btn_point = tk.Button(root, text=".", padx=20, pady=10, command=lambda: button_click("."))
 btn_point.grid(row=5, column=2)
 
+btn_e = tk.Button(root, text="e", padx=20, pady=10, command=lambda: button_click("e"))
+btn_e.grid(row=4, column=5)
+
+btn_pi = tk.Button(root, text="π", padx=20, pady=10, command=lambda: button_click("π"))
+btn_pi.grid(row=4, column=4)
+
 # buttons operator
 btn_add = tk.Button(root, text="+", padx=20, pady=10, command=lambda: button_click("+"))
 btn_add.grid(row=4, column=3)
@@ -81,7 +87,34 @@ btn_multi.grid(row=2, column=3)
 btn_divide = tk.Button(root, text="/", padx=20, pady=10, command=lambda: button_click("/"))
 btn_divide.grid(row=1, column=3)
 
-btn_equals = tk.Button(root, text="=", padx=20, pady=10, command=evaluate_expression)
+btn_equals = tk.Button(root, text="=", padx=20, pady=20, command=evaluate_expression)
 btn_equals.grid(row=5, column=3)
+
+btn_log = tk.Button(root, text="log_x", padx=20, pady=10, command=lambda: button_click("log_"))
+btn_log.grid(row=5, column=4)
+
+btn_ln = tk.Button(root, text="ln", padx=20, pady=10, command=lambda: button_click("ln("))
+btn_ln.grid(row=5, column=5)
+
+btn_expo = tk.Button(root, text="x^y", padx=20, pady=10, command=lambda: button_click("^"))
+btn_expo.grid(row=5, column=0)
+
+btn_sin = tk.Button(root, text="sin", padx=20, pady=10, command=lambda: button_click("sin("))
+btn_sin.grid(row=1, column=4)
+
+btn_cos = tk.Button(root, text="cos", padx=20, pady=10, command=lambda: button_click("cos("))
+btn_cos.grid(row=2, column=4)
+
+btn_tan = tk.Button(root, text="tan", padx=20, pady=10, command=lambda: button_click("tan("))
+btn_tan.grid(row=3, column=4)
+
+btn_sec = tk.Button(root, text="sec", padx=20, pady=10, command=lambda: button_click("sec("))
+btn_sec.grid(row=1, column=5)
+
+btn_csc = tk.Button(root, text="csc", padx=20, pady=10, command=lambda: button_click("csc("))
+btn_csc.grid(row=2, column=5)
+
+btn_cot = tk.Button(root, text="cot", padx=20, pady=10, command=lambda: button_click("cot("))
+btn_cot.grid(row=3, column=5)
 
 root.mainloop()
